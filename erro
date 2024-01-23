@@ -1,0 +1,22 @@
+#clase
+class Computador:
+    def __init__(self, marca, memoria_ram, placa_de_video):
+        self.marca = marca
+        self.memoria_ram = memoria_ram
+        self.placa_de_video = placa_de_video
+
+    def ligar(self):
+        print("estou ligando o computador")
+    
+    def desligar(self):
+        print("estou desligando")
+    
+    def exibir_dados_do_computador(self):
+        print(
+            f"Computador da marca {self.marca}, com {self.memoria_ram} de memoria ram
+              e placa de video {self.placa_de_video}.")
+
+Computador = ("Asus","32g","nvidia")
+Computador.ligar()
+Computador.desligar()
+Computador.exibir_dados_do_computador()
